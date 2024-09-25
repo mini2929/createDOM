@@ -33,7 +33,7 @@ section article {
   height: 300px;
   background-color: hotpink;
   border-radius: 10px;
-  box-shadow: 10px 10px 20px rgba(255, 105, 180, 0.5);
+  box-shadow: 10px 10px 20px rgba(158, 158, 158, 0.5);
   position: fixed;
   top: 50%;
   left: 50%;
@@ -44,7 +44,7 @@ section article {
   border: none;
   cursor: pointer;
   background: transparent;
-  color: #fff;
+  color: #4d4d4d;
   font-size: 1rem;
   position: absolute;
   top: 10%;

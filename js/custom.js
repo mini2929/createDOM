@@ -1,7 +1,11 @@
 // innerHTML을 활용한 동적 DOM 생성
 
 const frame = document.querySelector("section");
-const data = ['title1', 'title2', 'title3'];
+const data = [
+    { text: "title1", bg: "hotpink"},
+    { text: "title2", bg: "aqua"},
+    { text: "title3", bg: "orange"},
+];
 
 let tags = "";
 
@@ -9,13 +13,13 @@ let tags = "";
 data.forEach((el) => {
     tags += `
     <article>
-        <h1 class='tit'>${el}</h1>
+        <h1 class='tit' data-bg = ${el.bg}>${el.text}</h1>
     </article>
     `;
 });
 
 // section 요소 안에 최종적으로 DOM 생성
-console.log(tags);
+// console.log(tags);
 frame.innerHTML = tags;
 
 // aside라는 엘리먼트 노드를 직접 생성하고 클래스명, 텍스트 추가
@@ -63,6 +67,9 @@ asideEl.innerText = `
 document.body.addEventListener('click', (e) => { 
     if (e.target.className === 'tit') {
         document.body.append(asideEl);
+        // 추가
+        asideEl.style.backgroundColor = e.target.getAttribute("data-bg");
+
     }
 });
 
