@@ -15,4 +15,39 @@ a {
   color: inherit;
 }
 
+section {
+  width: 100%;
+  display: flex;
+}
+section article {
+  width: 300px;
+  height: 150px;
+  padding: 30px;
+  background-color: #555;
+  color: #fff;
+  margin: 50px;
+}
+
+.modal {
+  width: 600px;
+  height: 300px;
+  background-color: hotpink;
+  border-radius: 10px;
+  box-shadow: 10px 10px 20px rgba(255, 105, 180, 0.5);
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  margin-top: -150px;
+}
+.modal button {
+  border: none;
+  cursor: pointer;
+  background: transparent;
+  color: #fff;
+  font-size: 1rem;
+  position: absolute;
+  top: 10%;
+  right: 10%;
+}
+
 /*# sourceMappingURL=style.css.map */

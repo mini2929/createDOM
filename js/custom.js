@@ -1,5 +1,3 @@
-console.log("alsw");
-
 // innerHTML을 활용한 동적 DOM 생성
 
 const frame = document.querySelector("section");
