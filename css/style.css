@@ -38,6 +38,7 @@ section article {
   top: 50%;
   left: 50%;
   margin-top: -150px;
+  margin-left: -300px;
 }
 .modal button {
   border: none;
@@ -47,7 +48,7 @@ section article {
   font-size: 1rem;
   position: absolute;
   top: 10%;
-  right: 10%;
+  right: 8%;
 }
 
 /*# sourceMappingURL=style.css.map */
